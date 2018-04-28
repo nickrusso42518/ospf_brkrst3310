@@ -1,0 +1,189 @@
+version 15.6
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R6
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable password cisco
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+no ip icmp rate-limit unreachable
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+
+
+!
+!
+!
+!
+no ip domain lookup
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+username cisco privilege 15 password 0 cisco
+!
+redundancy
+!
+no cdp log mismatch duplex
+!
+ip tcp synwait-time 5
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 10.0.0.6 255.255.255.255
+ ip ospf 1 area 4
+!
+interface Ethernet0/0
+ description TO R7
+ ip address 10.6.7.6 255.255.255.0
+ ip ospf network point-to-point
+ ip ospf 1 area 4
+ ip ospf cost 10
+!
+interface Ethernet0/1
+ description TO R8 (EIGRP)
+ ip address 10.6.8.6 255.255.255.0
+!
+interface Ethernet0/2
+ no ip address
+ shutdown
+!
+interface Ethernet0/3
+ no ip address
+!
+interface Serial1/0
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+interface Serial1/1
+ description TO R4
+ ip address 10.4.6.6 255.255.255.0
+ ip ospf network point-to-point
+ ip ospf 1 area 4
+ ip ospf cost 32768
+ serial restart-delay 0
+!
+interface Serial1/2
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+interface Serial1/3
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+!
+router eigrp CLUS2018
+ !
+ address-family ipv4 unicast autonomous-system 42518
+  !
+  topology base
+   redistribute ospf 1 metric 100000 10 255 1 1500
+  exit-af-topology
+  network 10.6.8.6 0.0.0.0
+  metric weights 0 0 0 1 0 0 0
+ exit-address-family
+!
+router ospf 1
+ router-id 10.0.0.6
+ area 4 nssa
+ redistribute eigrp 42518 subnets route-map RM_EIGRP_TO_OSPF
+ passive-interface Loopback0
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!
+!
+ip prefix-list PL_LOOPBACKS seq 5 permit 0.0.0.0/0 ge 32
+ipv6 ioam timestamp
+!
+route-map RM_EIGRP_TO_OSPF permit 10
+ match ip address prefix-list PL_LOOPBACKS
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+banner exec ^C
+##############################################################
+# Troubleshooting OSPF (BRKRST-3310)                         #
+#                                                            #
+# By Nicholas Russo <nickrus@cisco.com>                      #
+# Cisco Live US 2018 - Demo lab                              #
+# https://github.com/nickrusso42518/ospf_brkrst3310          #
+##############################################################
+^C
+!
+line con 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ history size 256
+line aux 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+line vty 0 4
+ login
+ transport input none
+!
+!
+end

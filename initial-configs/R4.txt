@@ -1,0 +1,187 @@
+version 15.6
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R4
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable password cisco
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+no ip icmp rate-limit unreachable
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+
+
+!
+!
+!
+!
+no ip domain lookup
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+key chain KC_OSPF_AUTH
+ key 1
+  key-string OSPF
+  cryptographic-algorithm hmac-sha-256
+!
+!
+!
+!
+!
+!
+!
+username cisco privilege 15 password 0 cisco
+!
+redundancy
+!
+no cdp log mismatch duplex
+!
+ip tcp synwait-time 5
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 10.0.0.4 255.255.255.255
+ ip ospf 1 area 0
+!
+interface Ethernet0/0
+ no ip address
+ shutdown
+!
+interface Ethernet0/1
+ description TO R5
+ ip address 10.4.5.4 255.255.255.0
+ ip ospf network point-to-point
+ ip ospf 1 area 0
+ ip ospf cost 10
+!
+interface Ethernet0/2
+ no ip address
+ shutdown
+!
+interface Ethernet0/3
+ description TO R2
+ ip address 10.2.4.4 255.255.255.0
+ ip ospf network point-to-point
+ ip ospf 1 area 0
+ ip ospf cost 10
+!
+interface Serial1/0
+ description TO R19
+ ip address 10.4.19.4 255.255.255.0
+ ip ospf authentication key-chain KC_OSPF_AUTH
+ ip ospf network point-to-point
+ ip ospf 1 area 1
+ ip ospf cost 32767
+ serial restart-delay 0
+!
+interface Serial1/1
+ description TO R6
+ ip address 10.4.6.4 255.255.255.0
+ ip ospf network point-to-point
+ ip ospf 1 area 4
+ ip ospf cost 32768
+ serial restart-delay 0
+!
+interface Serial1/2
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+interface Serial1/3
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+router ospf 1
+ router-id 10.0.0.4
+ area 1 virtual-link 10.0.0.11
+ area 4 nssa
+ passive-interface Loopback0
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+ip http client source-interface Loopback0
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!
+ipv6 ioam timestamp
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+alias exec dl copy http://http:http@10.0.0.1/startup-config.cfg null:
+banner exec ^C
+##############################################################
+# Troubleshooting OSPF (BRKRST-3310)                         #
+#                                                            #
+# By Nicholas Russo <nickrus@cisco.com>                      #
+# Cisco Live US 2018 - Demo lab                              #
+# https://github.com/nickrusso42518/ospf_brkrst3310          #
+##############################################################
+^C
+!
+line con 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ history size 256
+line aux 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+line vty 0 4
+ login
+ transport input none
+!
+!
+end

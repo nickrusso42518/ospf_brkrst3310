@@ -1,0 +1,182 @@
+version 15.6
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R2
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable password cisco
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+no ip icmp rate-limit unreachable
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+
+
+!
+!
+!
+!
+no ip domain lookup
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+username cisco privilege 15 password 0 cisco
+!
+redundancy
+!
+no cdp log mismatch duplex
+!
+ip tcp synwait-time 5
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 10.0.0.2 255.255.255.255
+ ip ospf 1 area 0
+!
+interface Ethernet0/0
+ description TO R10
+ ip address 10.2.10.2 255.255.255.128
+ ip ospf authentication
+ ip ospf authentication-key OSPF123
+ ip ospf network broadcast
+ ip ospf priority 0
+ ip ospf 1 area 1
+ ip ospf cost 10
+!
+interface Ethernet0/1
+ description TO SW1 (R1/R3 LAN)
+ ip address 10.0.1.2 255.255.255.0
+ ip ospf network broadcast
+ ip ospf priority 0
+ ip ospf 1 area 0
+ ip ospf cost 10
+!
+interface Ethernet0/2
+ description TO R14
+ ip address 10.2.14.2 255.255.255.0
+ ip ospf network point-to-point
+ ip ospf 1 area 0
+ ip ospf cost 10
+!
+interface Ethernet0/3
+ description TO R4
+ ip address 10.2.4.2 255.255.255.0
+ ip ospf network point-to-point
+ ip ospf 1 area 0
+ ip ospf cost 10
+!
+interface Serial1/0
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+interface Serial1/1
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+interface Serial1/2
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+interface Serial1/3
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+router ospf 1
+ router-id 10.0.0.2
+ area 1 stub
+ passive-interface Loopback0
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!
+ipv6 ioam timestamp
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+banner exec ^C
+##############################################################
+# Troubleshooting OSPF (BRKRST-3310)                         #
+#                                                            #
+# By Nicholas Russo <nickrus@cisco.com>                      #
+# Cisco Live US 2018 - Demo lab                              #
+# https://github.com/nickrusso42518/ospf_brkrst3310          #
+##############################################################
+^C
+!
+line con 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ history size 256
+line aux 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+line vty 0 4
+ login
+ transport input none
+!
+!
+end
