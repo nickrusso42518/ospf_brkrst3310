@@ -26,7 +26,7 @@ echo "Markdown linting complete"
 #
 #
 echo "Config checking started"
-for f in $(find . -name "*.txt"); do
+for f in $(find . -name "R*.txt"); do
   # Print the filename, then use 'grep' to check for key information.
   echo "checking $f"
   # Make sure the author's name and email are clearly shown.

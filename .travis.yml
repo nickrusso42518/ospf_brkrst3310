@@ -1,4 +1,8 @@
 ---
+# Install python packages linters.
+install:
+  - "sudo pip install -r requirements.txt"
+
 # Lint whatever code files exist and check the basic correctness of
 # the text configuration files. At present, 38 files are expected,
 # 19 initial configurations and 19 final configurations.
