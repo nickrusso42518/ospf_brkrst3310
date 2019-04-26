@@ -1,8 +1,8 @@
 #!/bin/bash
-# File:    html_link.sh
+# File:    lint.sh
 # Version: Bash 3.2.57(1)
 # Author:  Nicholas Russo (http://njrusmc.net)
-# Purpose: First-stage CI check to ensure markdown READMEs and device
+# Purpose: First-stage CI check to ensure lab topology device
 #          configurations are free from defects, or common styling errors
 #          (including attribution). It prints out when linting starts
 #          and ends, plus the name of each file discovered for linting.
@@ -13,17 +13,6 @@
 #
 rc=0 # Return code used to sum the rc from individual lint tests.
 nf=0 # Number of files seen. Normal 'array length' isn't working.
-#
-echo "Markdown linting started"
-for f in $(find . -name "*.md"); do
-  # Print the filename, then run 'markdownlint'
-  echo "checking $f"
-  markdownlint $f
-  # Sum the rc from markdownlint with the sum
-  rc=$((rc + $?))
-done
-echo "Markdown linting complete"
-#
 #
 echo "Config checking started"
 for f in $(find . -name "R*.txt"); do

@@ -144,6 +144,8 @@ ip forward-protocol nd
 no ip http server
 no ip http secure-server
 ip http client source-interface Loopback0
+ip ssh logging events
+ip ssh version 2
 ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
 ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
 !
@@ -160,15 +162,15 @@ control-plane
 !
 !
 alias exec dl copy http://http:http@10.0.0.1/startup-config.cfg null:
-banner exec ^C
+banner exec %
 ##############################################################
 # Troubleshooting OSPF (BRKRST-3310)                         #
 #                                                            #
 # By Nicholas Russo <nickrus@cisco.com>                      #
-# Cisco Live US 2018 - Demo lab                              #
+# Cisco Live - Demo lab with IOSv                            #
 # https://github.com/nickrusso42518/ospf_brkrst3310          #
 ##############################################################
-^C
+%
 !
 line con 0
  exec-timeout 0 0
@@ -180,8 +182,8 @@ line aux 0
  privilege level 15
  logging synchronous
 line vty 0 4
- login
- transport input none
+ login local
+ transport input telnet ssh
 !
 !
 end
