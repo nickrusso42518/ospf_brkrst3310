@@ -1,0 +1,231 @@
+version 15.6
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R16
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable password cisco
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+no ip icmp rate-limit unreachable
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+
+
+!
+!
+!
+!
+no ip domain lookup
+ip domain name lab.local
+ip cef
+ipv6 unicast-routing
+ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+username cisco privilege 15 password 0 cisco
+!
+redundancy
+!
+no cdp log mismatch duplex
+!
+ip tcp synwait-time 5
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 10.0.0.16 255.255.255.255
+ ipv6 address FE80::16 link-local
+ ipv6 address FC00::16/128
+ ospfv3 1 ipv6 area 2
+!
+interface Tunnel3
+ description DMVPN (OVERLAY)
+ ip address 10.0.3.16 255.255.255.0
+ no ip redirects
+ ip nhrp network-id 3
+ ip nhrp nhs 10.0.3.3 nbma 192.168.3.3
+ ip nhrp shortcut
+ ip ospf network point-to-multipoint non-broadcast
+ ip ospf cost 10
+ ipv6 address FE80::16 link-local
+ ipv6 nhrp network-id 3
+ ipv6 nhrp nhs FE80::3 nbma 192.168.3.3 multicast
+ ipv6 nhrp shortcut
+ ospfv3 1 ipv6 area 2
+ ospfv3 1 ipv6 network point-to-multipoint
+ ospfv3 1 ipv6 cost 10
+ tunnel source 192.168.16.16
+ tunnel mode gre multipoint
+!
+interface Ethernet0/0
+ no ip address
+ shutdown
+!
+interface Ethernet0/1
+ no ip address
+ shutdown
+!
+interface Ethernet0/2
+ description TO R18 (UNDERLAY)
+ ip address 192.168.16.16 255.255.255.0
+ ip ospf network non-broadcast
+ ip ospf prefix-suppression
+!
+interface Ethernet0/3
+ description TO SW2 (R15/R17 LAN)
+ ip address 10.0.15.16 255.255.255.0
+ ip ospf network non-broadcast
+ ip ospf cost 10
+ ipv6 address FE80::16 link-local
+ ipv6 address FC00:10:0:15::16/64
+ ospfv3 1 ipv6 area 2
+ ospfv3 1 ipv6 network non-broadcast
+ ospfv3 1 ipv6 cost 10
+!
+interface Serial1/0
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+interface Serial1/1
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+interface Serial1/2
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+interface Serial1/3
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+router ospfv3 1
+ !
+ address-family ipv6 unicast
+  passive-interface Loopback0
+  router-id 10.0.0.16
+ exit-address-family
+!
+router ospf 1
+ router-id 10.0.0.16
+ passive-interface Loopback0
+ network 0.0.0.0 255.255.255.255 area 2
+ neighbor 10.0.3.3
+!
+router bgp 1
+ bgp router-id 10.0.0.15
+ bgp log-neighbor-changes
+ no bgp default ipv4-unicast
+ neighbor 10.0.15.17 remote-as 42518
+ neighbor 10.0.15.17 description EBGP TO R17
+ neighbor FC00:10:0:15::17 remote-as 42518
+ neighbor FC00:10:0:15::17 description EBGP TO R17
+ !
+ address-family ipv4
+  network 10.0.0.0
+  neighbor 10.0.15.17 activate
+ exit-address-family
+ !
+ address-family ipv6
+  network FC00::/16
+  network FC00:10::/32
+  neighbor FC00:10:0:15::17 activate
+ exit-address-family
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+ip route 10.0.0.0 255.0.0.0 10.0.3.3 name OVERLAY_SUMMARY
+ip route 192.168.0.0 255.255.0.0 192.168.16.18 name TUNNEL_ENDPOINTS
+ip ssh logging events
+ip ssh version 2
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!
+ipv6 route FC00::/16 Tunnel3 FE80::3
+ipv6 ioam timestamp
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+banner exec ^C
+##############################################################
+# Troubleshooting OSPF (BRKRST-3310)                         #
+#                                                            #
+# By Nicholas Russo <nickrus@cisco.com>                      #
+# Cisco Live - Demo lab with IOSv                            #
+# https://github.com/nickrusso42518/ospf_brkrst3310          #
+##############################################################
+^C
+!
+line con 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ history size 256
+line aux 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+line vty 0 4
+ login local
+ transport input telnet ssh
+!
+!
+end
