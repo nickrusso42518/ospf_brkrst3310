@@ -19,7 +19,6 @@ your work. See the README.md file in that folder for details.
 
 ## Reference material
 All of my Cisco Live sessions are easily accessible through my personal website.
-You can also find session comments which highlight my areas for improvement.
 
 > http://njrusmc.net/conf/conf.html
 
