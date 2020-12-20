@@ -1,7 +1,3 @@
-[![Build Status](
-https://travis-ci.org/nickrusso42518/ospf_brkrst3310.svg?branch=master)](
-https://travis-ci.org/nickrusso42518/ospf_brkrst3310)
-
 # Troubleshooting OSPF (BRKRST-3310)
 Welcome to the Github repository for the lab demonstration!
 
@@ -20,7 +16,7 @@ your work. See the README.md file in that folder for details.
 ## Reference material
 All of my Cisco Live sessions are easily accessible through my personal website.
 
-> http://njrusmc.net/conf/conf.html
+> http://njrusmc.net/video/video.html
 
 ## Reference topology
 Please reference this diagram when reviewing this Cisco Live session.

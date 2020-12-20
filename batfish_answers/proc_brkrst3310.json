@@ -1,0 +1,207 @@
+[
+  {
+    "Node": "r13",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Areas": [
+      "3"
+    ],
+    "Reference_Bandwidth": 100000000.0,
+    "Router_ID": "10.0.0.13",
+    "Export_Policy_Sources": [],
+    "Area_Border_Router": false
+  },
+  {
+    "Node": "r6",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Areas": [
+      "4"
+    ],
+    "Reference_Bandwidth": 100000000.0,
+    "Router_ID": "10.0.0.6",
+    "Export_Policy_Sources": [
+      "RM_EIGRP_TO_OSPF"
+    ],
+    "Area_Border_Router": false
+  },
+  {
+    "Node": "r15",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Areas": [
+      "2"
+    ],
+    "Reference_Bandwidth": 100000000.0,
+    "Router_ID": "10.0.0.15",
+    "Export_Policy_Sources": [],
+    "Area_Border_Router": false
+  },
+  {
+    "Node": "r4",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Areas": [
+      "0",
+      "1",
+      "4"
+    ],
+    "Reference_Bandwidth": 100000000.0,
+    "Router_ID": "10.0.0.4",
+    "Export_Policy_Sources": [],
+    "Area_Border_Router": true
+  },
+  {
+    "Node": "r7",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Areas": [
+      "4"
+    ],
+    "Reference_Bandwidth": 100000000.0,
+    "Router_ID": "10.0.0.7",
+    "Export_Policy_Sources": [
+      "RM_EIGRP_TO_OSPF"
+    ],
+    "Area_Border_Router": false
+  },
+  {
+    "Node": "r14",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Areas": [
+      "0",
+      "3"
+    ],
+    "Reference_Bandwidth": 100000000.0,
+    "Router_ID": "10.0.0.14",
+    "Export_Policy_Sources": [],
+    "Area_Border_Router": true
+  },
+  {
+    "Node": "r16",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Areas": [
+      "2"
+    ],
+    "Reference_Bandwidth": 100000000.0,
+    "Router_ID": "10.0.0.16",
+    "Export_Policy_Sources": [],
+    "Area_Border_Router": false
+  },
+  {
+    "Node": "r11",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Areas": [
+      "0",
+      "1"
+    ],
+    "Reference_Bandwidth": 100000000.0,
+    "Router_ID": "10.0.0.11",
+    "Export_Policy_Sources": [],
+    "Area_Border_Router": true
+  },
+  {
+    "Node": "r2",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Areas": [
+      "0",
+      "1"
+    ],
+    "Reference_Bandwidth": 100000000.0,
+    "Router_ID": "10.0.0.2",
+    "Export_Policy_Sources": [],
+    "Area_Border_Router": true
+  },
+  {
+    "Node": "r10",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Areas": [
+      "0",
+      "1"
+    ],
+    "Reference_Bandwidth": 100000000.0,
+    "Router_ID": "10.0.0.10",
+    "Export_Policy_Sources": [],
+    "Area_Border_Router": true
+  },
+  {
+    "Node": "r5",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Areas": [
+      "0",
+      "4"
+    ],
+    "Reference_Bandwidth": 100000000.0,
+    "Router_ID": "10.0.0.5",
+    "Export_Policy_Sources": [],
+    "Area_Border_Router": true
+  },
+  {
+    "Node": "r12",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Areas": [
+      "3"
+    ],
+    "Reference_Bandwidth": 100000000.0,
+    "Router_ID": "10.0.0.12",
+    "Export_Policy_Sources": [],
+    "Area_Border_Router": false
+  },
+  {
+    "Node": "r19",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Areas": [
+      "1"
+    ],
+    "Reference_Bandwidth": 100000000.0,
+    "Router_ID": "10.0.0.19",
+    "Export_Policy_Sources": [],
+    "Area_Border_Router": false
+  },
+  {
+    "Node": "r3",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Areas": [
+      "0",
+      "2"
+    ],
+    "Reference_Bandwidth": 100000000.0,
+    "Router_ID": "10.0.0.3",
+    "Export_Policy_Sources": [],
+    "Area_Border_Router": true
+  },
+  {
+    "Node": "r9",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Areas": [
+      "0"
+    ],
+    "Reference_Bandwidth": 100000000.0,
+    "Router_ID": "10.0.0.9",
+    "Export_Policy_Sources": [],
+    "Area_Border_Router": false
+  },
+  {
+    "Node": "r1",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Areas": [
+      "0",
+      "3"
+    ],
+    "Reference_Bandwidth": 100000000.0,
+    "Router_ID": "10.0.0.1",
+    "Export_Policy_Sources": [],
+    "Area_Border_Router": true
+  }
+]

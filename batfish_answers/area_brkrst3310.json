@@ -1,0 +1,330 @@
+[
+  {
+    "Node": "r6",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Area": "4",
+    "Area_Type": "NSSA",
+    "Active_Interfaces": [
+      "Ethernet0/0",
+      "Serial1/1"
+    ],
+    "Passive_Interfaces": [
+      "Loopback0"
+    ]
+  },
+  {
+    "Node": "r2",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Area": "1",
+    "Area_Type": "NONE",
+    "Active_Interfaces": [
+      "Ethernet0/0"
+    ],
+    "Passive_Interfaces": []
+  },
+  {
+    "Node": "r12",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Area": "3",
+    "Area_Type": "NONE",
+    "Active_Interfaces": [
+      "Ethernet0/1",
+      "Ethernet0/3"
+    ],
+    "Passive_Interfaces": [
+      "Loopback0"
+    ]
+  },
+  {
+    "Node": "r4",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Area": "4",
+    "Area_Type": "NSSA",
+    "Active_Interfaces": [
+      "Serial1/1"
+    ],
+    "Passive_Interfaces": []
+  },
+  {
+    "Node": "r19",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Area": "1",
+    "Area_Type": "NONE",
+    "Active_Interfaces": [
+      "Serial1/0",
+      "Serial1/1"
+    ],
+    "Passive_Interfaces": [
+      "Loopback0"
+    ]
+  },
+  {
+    "Node": "r5",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Area": "4",
+    "Area_Type": "NSSA",
+    "Active_Interfaces": [
+      "Ethernet0/2"
+    ],
+    "Passive_Interfaces": []
+  },
+  {
+    "Node": "r10",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Area": "1",
+    "Area_Type": "NONE",
+    "Active_Interfaces": [
+      "Ethernet0/0",
+      "Ethernet0/3"
+    ],
+    "Passive_Interfaces": [
+      "Loopback0"
+    ]
+  },
+  {
+    "Node": "r16",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Area": "2",
+    "Area_Type": "NONE",
+    "Active_Interfaces": [
+      "Ethernet0/2",
+      "Ethernet0/3",
+      "Tunnel3"
+    ],
+    "Passive_Interfaces": [
+      "Loopback0"
+    ]
+  },
+  {
+    "Node": "r13",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Area": "3",
+    "Area_Type": "NONE",
+    "Active_Interfaces": [
+      "Ethernet0/2",
+      "Ethernet0/3"
+    ],
+    "Passive_Interfaces": [
+      "Loopback0"
+    ]
+  },
+  {
+    "Node": "r4",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Area": "0",
+    "Area_Type": "NONE",
+    "Active_Interfaces": [
+      "Ethernet0/1",
+      "Ethernet0/3"
+    ],
+    "Passive_Interfaces": [
+      "Loopback0"
+    ]
+  },
+  {
+    "Node": "r5",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Area": "0",
+    "Area_Type": "NONE",
+    "Active_Interfaces": [
+      "Ethernet0/1",
+      "Ethernet0/3"
+    ],
+    "Passive_Interfaces": [
+      "Loopback0"
+    ]
+  },
+  {
+    "Node": "r7",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Area": "4",
+    "Area_Type": "NSSA",
+    "Active_Interfaces": [
+      "Ethernet0/0",
+      "Ethernet0/2"
+    ],
+    "Passive_Interfaces": [
+      "Loopback0"
+    ]
+  },
+  {
+    "Node": "r4",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Area": "1",
+    "Area_Type": "NONE",
+    "Active_Interfaces": [
+      "Serial1/0"
+    ],
+    "Passive_Interfaces": []
+  },
+  {
+    "Node": "r2",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Area": "0",
+    "Area_Type": "NONE",
+    "Active_Interfaces": [
+      "Ethernet0/1",
+      "Ethernet0/2",
+      "Ethernet0/3"
+    ],
+    "Passive_Interfaces": [
+      "Loopback0"
+    ]
+  },
+  {
+    "Node": "r14",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Area": "0",
+    "Area_Type": "NONE",
+    "Active_Interfaces": [
+      "Ethernet0/0",
+      "Ethernet0/2"
+    ],
+    "Passive_Interfaces": [
+      "Loopback0"
+    ]
+  },
+  {
+    "Node": "r3",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Area": "0",
+    "Area_Type": "NONE",
+    "Active_Interfaces": [
+      "Ethernet0/1",
+      "Ethernet0/3"
+    ],
+    "Passive_Interfaces": [
+      "Loopback0"
+    ]
+  },
+  {
+    "Node": "r9",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Area": "0",
+    "Area_Type": "NONE",
+    "Active_Interfaces": [
+      "Ethernet0/1",
+      "Ethernet0/2"
+    ],
+    "Passive_Interfaces": [
+      "Loopback0"
+    ]
+  },
+  {
+    "Node": "r3",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Area": "2",
+    "Area_Type": "NONE",
+    "Active_Interfaces": [
+      "Tunnel3"
+    ],
+    "Passive_Interfaces": []
+  },
+  {
+    "Node": "r15",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Area": "2",
+    "Area_Type": "NONE",
+    "Active_Interfaces": [
+      "Ethernet0/3",
+      "Tunnel3"
+    ],
+    "Passive_Interfaces": [
+      "Loopback0"
+    ]
+  },
+  {
+    "Node": "r14",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Area": "3",
+    "Area_Type": "NONE",
+    "Active_Interfaces": [
+      "Ethernet0/1",
+      "Ethernet0/3"
+    ],
+    "Passive_Interfaces": []
+  },
+  {
+    "Node": "r11",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Area": "1",
+    "Area_Type": "NONE",
+    "Active_Interfaces": [
+      "Ethernet0/3",
+      "Serial1/1"
+    ],
+    "Passive_Interfaces": [
+      "Loopback0"
+    ]
+  },
+  {
+    "Node": "r1",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Area": "3",
+    "Area_Type": "NONE",
+    "Active_Interfaces": [
+      "Ethernet0/2",
+      "Ethernet0/3",
+      "Loopback3"
+    ],
+    "Passive_Interfaces": []
+  },
+  {
+    "Node": "r1",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Area": "0",
+    "Area_Type": "NONE",
+    "Active_Interfaces": [
+      "Ethernet0/0",
+      "Ethernet0/1"
+    ],
+    "Passive_Interfaces": [
+      "Loopback0"
+    ]
+  },
+  {
+    "Node": "r11",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Area": "0",
+    "Area_Type": "NONE",
+    "Active_Interfaces": [
+      "Ethernet0/2"
+    ],
+    "Passive_Interfaces": []
+  },
+  {
+    "Node": "r10",
+    "VRF": "default",
+    "Process_ID": "1",
+    "Area": "0",
+    "Area_Type": "NONE",
+    "Active_Interfaces": [
+      "Ethernet0/1"
+    ],
+    "Passive_Interfaces": []
+  }
+]

@@ -1,0 +1,870 @@
+[
+  {
+    "Interface": {
+      "hostname": "r10"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 1,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r12"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 3,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r11"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 0,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r1"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 3,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r1"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 3,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r14"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 0,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r3"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 0,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r9"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 0,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r5"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 4,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r14"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 0,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r10"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 1,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": true,
+    "OSPF_Cost": 1,
+    "OSPF_Network_Type": "BROADCAST",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r12"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 3,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": true,
+    "OSPF_Cost": 1,
+    "OSPF_Network_Type": "BROADCAST",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r14"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 3,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r14"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 3,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r13"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 3,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r13"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 3,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r11"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 1,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": true,
+    "OSPF_Cost": 1,
+    "OSPF_Network_Type": "BROADCAST",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r12"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 3,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r10"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 0,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r11"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 1,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r6"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 4,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 32768,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r19"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 1,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 32768,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r15"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 2,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "POINT_TO_MULTIPOINT",
+    "OSPF_Hello_Interval": 30,
+    "OSPF_Dead_Interval": 120
+  },
+  {
+    "Interface": {
+      "hostname": "r4"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 4,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 32768,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r1"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 0,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "BROADCAST",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r6"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 4,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": true,
+    "OSPF_Cost": 1,
+    "OSPF_Network_Type": "BROADCAST",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r7"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 4,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": true,
+    "OSPF_Cost": 1,
+    "OSPF_Network_Type": "BROADCAST",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r1"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 3,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 1,
+    "OSPF_Network_Type": "BROADCAST",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r9"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 0,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": true,
+    "OSPF_Cost": 1,
+    "OSPF_Network_Type": "BROADCAST",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r1"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 0,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r3"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 2,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": null,
+    "OSPF_Hello_Interval": 30,
+    "OSPF_Dead_Interval": 120
+  },
+  {
+    "Interface": {
+      "hostname": "r13"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 3,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": true,
+    "OSPF_Cost": 1,
+    "OSPF_Network_Type": "BROADCAST",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r19"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 1,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": true,
+    "OSPF_Cost": 1,
+    "OSPF_Network_Type": "BROADCAST",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r15"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 2,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": true,
+    "OSPF_Cost": 1,
+    "OSPF_Network_Type": "BROADCAST",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r14"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 0,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": true,
+    "OSPF_Cost": 1,
+    "OSPF_Network_Type": "BROADCAST",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r16"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 2,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": true,
+    "OSPF_Cost": 1,
+    "OSPF_Network_Type": "BROADCAST",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r16"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 2,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": null,
+    "OSPF_Hello_Interval": 30,
+    "OSPF_Dead_Interval": 120
+  },
+  {
+    "Interface": {
+      "hostname": "r4"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 0,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": true,
+    "OSPF_Cost": 1,
+    "OSPF_Network_Type": "BROADCAST",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r5"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 0,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": true,
+    "OSPF_Cost": 1,
+    "OSPF_Network_Type": "BROADCAST",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r2"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 0,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": true,
+    "OSPF_Cost": 1,
+    "OSPF_Network_Type": "BROADCAST",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r3"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 0,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": true,
+    "OSPF_Cost": 1,
+    "OSPF_Network_Type": "BROADCAST",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r19"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 1,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 32767,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r2"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 1,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "BROADCAST",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r4"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 1,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 32767,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r3"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 0,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "BROADCAST",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r2"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 0,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "BROADCAST",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r9"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 0,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r2"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 0,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r16"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 2,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "NON_BROADCAST_MULTI_ACCESS",
+    "OSPF_Hello_Interval": 30,
+    "OSPF_Dead_Interval": 120
+  },
+  {
+    "Interface": {
+      "hostname": "r16"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 2,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "NON_BROADCAST_MULTI_ACCESS",
+    "OSPF_Hello_Interval": 30,
+    "OSPF_Dead_Interval": 120
+  },
+  {
+    "Interface": {
+      "hostname": "r7"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 4,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r7"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 4,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r6"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 4,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r4"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 0,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r5"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 0,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r1"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 0,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": true,
+    "OSPF_Cost": 1,
+    "OSPF_Network_Type": "BROADCAST",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r4"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 0,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r5"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 0,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r2"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 0,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r10"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 1,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 10,
+    "OSPF_Network_Type": "NON_BROADCAST_MULTI_ACCESS",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r11"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 1,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 32767,
+    "OSPF_Network_Type": "POINT_TO_POINT",
+    "OSPF_Hello_Interval": 10,
+    "OSPF_Dead_Interval": 40
+  },
+  {
+    "Interface": {
+      "hostname": "r15"
+    },
+    "VRF": "default",
+    "Process_ID": "1",
+    "OSPF_Area_Name": 2,
+    "OSPF_Enabled": true,
+    "OSPF_Passive": false,
+    "OSPF_Cost": 20,
+    "OSPF_Network_Type": "NON_BROADCAST_MULTI_ACCESS",
+    "OSPF_Hello_Interval": 30,
+    "OSPF_Dead_Interval": 120
+  }
+]
