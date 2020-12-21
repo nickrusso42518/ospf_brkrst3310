@@ -1,0 +1,14 @@
+           Interface      VRF Process_ID  ...           OSPF_Network_Type OSPF_Hello_Interval OSPF_Dead_Interval
+0   r10[Ethernet0/3]  default          1  ...              POINT_TO_POINT                  10                 40
+1   r12[Ethernet0/3]  default          1  ...              POINT_TO_POINT                  10                 40
+2   r11[Ethernet0/2]  default          1  ...              POINT_TO_POINT                  10                 40
+3    r1[Ethernet0/2]  default          1  ...              POINT_TO_POINT                  10                 40
+4    r1[Ethernet0/3]  default          1  ...              POINT_TO_POINT                  10                 40
+..               ...      ...        ...  ...                         ...                 ...                ...
+57   r5[Ethernet0/3]  default          1  ...              POINT_TO_POINT                  10                 40
+58   r2[Ethernet0/3]  default          1  ...              POINT_TO_POINT                  10                 40
+59  r10[Ethernet0/0]  default          1  ...  NON_BROADCAST_MULTI_ACCESS                  10                 40
+60    r11[Serial1/1]  default          1  ...              POINT_TO_POINT                  10                 40
+61  r15[Ethernet0/3]  default          1  ...  NON_BROADCAST_MULTI_ACCESS                  30                120
+
+[62 rows x 10 columns]

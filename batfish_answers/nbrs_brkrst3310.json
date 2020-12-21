@@ -1,0 +1,306 @@
+[
+  {
+    "Interface": {
+      "hostname": "r1"
+    },
+    "Remote_Interface": {
+      "hostname": "r14"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r14"
+    },
+    "Remote_Interface": {
+      "hostname": "r1"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r1"
+    },
+    "Remote_Interface": {
+      "hostname": "r2"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r1"
+    },
+    "Remote_Interface": {
+      "hostname": "r3"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r2"
+    },
+    "Remote_Interface": {
+      "hostname": "r1"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r2"
+    },
+    "Remote_Interface": {
+      "hostname": "r3"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r3"
+    },
+    "Remote_Interface": {
+      "hostname": "r2"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r3"
+    },
+    "Remote_Interface": {
+      "hostname": "r1"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r1"
+    },
+    "Remote_Interface": {
+      "hostname": "r13"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r13"
+    },
+    "Remote_Interface": {
+      "hostname": "r1"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r1"
+    },
+    "Remote_Interface": {
+      "hostname": "r12"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r12"
+    },
+    "Remote_Interface": {
+      "hostname": "r1"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r10"
+    },
+    "Remote_Interface": {
+      "hostname": "r9"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r9"
+    },
+    "Remote_Interface": {
+      "hostname": "r10"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r10"
+    },
+    "Remote_Interface": {
+      "hostname": "r11"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r11"
+    },
+    "Remote_Interface": {
+      "hostname": "r10"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r11"
+    },
+    "Remote_Interface": {
+      "hostname": "r9"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r9"
+    },
+    "Remote_Interface": {
+      "hostname": "r11"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r12"
+    },
+    "Remote_Interface": {
+      "hostname": "r14"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r14"
+    },
+    "Remote_Interface": {
+      "hostname": "r12"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r13"
+    },
+    "Remote_Interface": {
+      "hostname": "r14"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r14"
+    },
+    "Remote_Interface": {
+      "hostname": "r13"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r14"
+    },
+    "Remote_Interface": {
+      "hostname": "r2"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r2"
+    },
+    "Remote_Interface": {
+      "hostname": "r14"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r19"
+    },
+    "Remote_Interface": {
+      "hostname": "r4"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r4"
+    },
+    "Remote_Interface": {
+      "hostname": "r19"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r2"
+    },
+    "Remote_Interface": {
+      "hostname": "r4"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r4"
+    },
+    "Remote_Interface": {
+      "hostname": "r2"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r3"
+    },
+    "Remote_Interface": {
+      "hostname": "r5"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r5"
+    },
+    "Remote_Interface": {
+      "hostname": "r3"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r4"
+    },
+    "Remote_Interface": {
+      "hostname": "r5"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r5"
+    },
+    "Remote_Interface": {
+      "hostname": "r4"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r4"
+    },
+    "Remote_Interface": {
+      "hostname": "r6"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r6"
+    },
+    "Remote_Interface": {
+      "hostname": "r4"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r5"
+    },
+    "Remote_Interface": {
+      "hostname": "r7"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r7"
+    },
+    "Remote_Interface": {
+      "hostname": "r5"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r6"
+    },
+    "Remote_Interface": {
+      "hostname": "r7"
+    }
+  },
+  {
+    "Interface": {
+      "hostname": "r7"
+    },
+    "Remote_Interface": {
+      "hostname": "r6"
+    }
+  }
+]
